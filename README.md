@@ -1,3 +1,7 @@
+> This fork is configured as **OneCFCloud**, a personal self-use build modified from Orange Cloud. See [README-OneCFCloud.md](README-OneCFCloud.md) for the changes, OAuth setup notes, and TestFlight/self-build context.
+>
+> 这个 fork 已配置为 **OneCFCloud** 个人自用构建；改造内容、OAuth/Worker 配置和 TestFlight 自用说明见 [README-OneCFCloud.md](README-OneCFCloud.md)。
+
 <div align="center">
 
 <img src="apps/web/public/icons/icon-512.png" width="120" alt="Orange Cloud" />
