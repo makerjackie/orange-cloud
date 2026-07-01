@@ -4,8 +4,8 @@
 <dict>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
-		<string>jiamin.chen.Orange-Cloud.refresh</string>
-		<string>jiamin.chen.Orange-Cloud.transfer</string>
+		<string>com.01mvp.onecfcloud.refresh</string>
+		<string>com.01mvp.onecfcloud.transfer</string>
 	</array>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
@@ -16,7 +16,7 @@
 			<string>OAuth Callback</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>orangecloud</string>
+				<string>onecfcloud</string>
 			</array>
 		</dict>
 	</array>

@@ -305,7 +305,8 @@ final class AuthManager {
             throw AuthError.invalidCallback
         }
         if let error = items.first(where: { $0.name == "error" })?.value {
-            throw AuthError.oauthError(error)
+            let description = items.first(where: { $0.name == "error_description" })?.value
+            throw AuthError.oauthError(description.map { "\(error): \($0)" } ?? error)
         }
         guard let code = items.first(where: { $0.name == "code" })?.value,
               let state = items.first(where: { $0.name == "state" })?.value else {

@@ -17,7 +17,7 @@ nonisolated struct WidgetSnapshot: Codable, Sendable {
     var activeZones: Int
     var updatedAt:   Date
 
-    static let appGroupID = "group.jiamin.chen.Orange-Cloud"
+    static let appGroupID = "group.com.01mvp.onecfcloud"
     private static let legacyKey  = "widgetSnapshot"
     private static let byAccountKey = "widgetOverviewByAccount"
     static let currentAccountKey = "currentAccountId"

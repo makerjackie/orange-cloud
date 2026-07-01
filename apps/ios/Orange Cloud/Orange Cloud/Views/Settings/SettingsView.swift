@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import StoreKit
 
 struct SettingsView: View {
 
@@ -69,7 +68,7 @@ struct SettingsView: View {
                 }
                 .glassRow()
 
-                // ── Orange Cloud Pro（开源自编译构建无此入口）──
+                // ── OneCFCloud Pro（本 TestFlight 自用构建无此入口）──
                 #if !OPENSOURCE_UNLOCKED
                 Section {
                     Button {
@@ -78,7 +77,7 @@ struct SettingsView: View {
                         HStack(spacing: 12) {
                             TintIcon(systemImage: "sparkles", color: .ocOrange)
                             VStack(alignment: .leading, spacing: 2) {
-                                Text("Orange Cloud Pro")
+                                Text("OneCFCloud Pro")
                                     .foregroundStyle(.primary)
                                 Text(entitlements.isPro ? "已解锁，感谢支持" : "多账号与专业功能")
                                     .font(.caption)

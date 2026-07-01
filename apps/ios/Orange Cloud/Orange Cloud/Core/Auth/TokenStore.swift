@@ -18,11 +18,11 @@ nonisolated enum TokenStore {
         var scope:        String
     }
 
-    private static let service = "app.orangecloud.oauth"
+    private static let service = "app.onecfcloud.oauth"
     private static let legacyAccount = "default"
 
     /// 共享钥匙串组（主 App 与 Widget 共用；Widget 只读 access_token，不做刷新）
-    static let sharedAccessGroup = "6G78MMY657.jiamin.chen.orange-cloud.shared"
+    static let sharedAccessGroup = "PCJ84YD7HQ.com.01mvp.onecfcloud.shared"
 
     // MARK: - 按身份读写
 

@@ -11,6 +11,8 @@ import TipKit
 import CoreSpotlight
 import ActivityKit
 
+// OneCFCloud is a personal TestFlight build derived from the open-source Orange Cloud project.
+// This build keeps its own bundle identifiers, OAuth client, callback relay, and signing team.
 @main
 struct Orange_CloudApp: App {
 

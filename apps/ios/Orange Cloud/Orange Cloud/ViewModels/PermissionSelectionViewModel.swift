@@ -10,7 +10,14 @@ import Observation
 @MainActor
 final class PermissionSelectionViewModel {
 
-    var permissions: [FeaturePermission] = FeaturePermission.allFeatures
+    var permissions: [FeaturePermission] = {
+        var permissions = FeaturePermission.allFeatures
+        for i in permissions.indices {
+            permissions[i].isEnabled = permissions[i].isRequired
+            permissions[i].canEdit = false
+        }
+        return permissions
+    }()
 
     // 当前选中的 scope ID 列表（用于预览）
     var selectedScopes: [String] {

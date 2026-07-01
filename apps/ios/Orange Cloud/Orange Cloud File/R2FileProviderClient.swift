@@ -22,9 +22,9 @@ actor R2FileProviderClient {
     /// client/v4 单次 PUT 上限（~300MB）。无 multipart、无服务端 copy，超限只能拒。
     static let maxUploadBytes = 300 * 1024 * 1024
 
-    private static let keychainService = "app.orangecloud.oauth"
-    private static let keychainAccessGroup = "6G78MMY657.jiamin.chen.orange-cloud.shared"
-    private static let oauthClientID = "102240eb9095a1965ee11813ef4788cd"
+    private static let keychainService = "app.onecfcloud.oauth"
+    private static let keychainAccessGroup = "PCJ84YD7HQ.com.01mvp.onecfcloud.shared"
+    private static let oauthClientID = "5296ce169556ba6a1d84f00912afea92"
     private static let oauthTokenURL = URL(string: "https://dash.cloudflare.com/oauth2/token")!
     private let apiBase = URL(string: "https://api.cloudflare.com/client/v4")!
 

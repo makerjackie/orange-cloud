@@ -33,9 +33,9 @@ struct LoginView: View {
                                 )
                             )
                             .shadow(color: Color.ocOrange.opacity(0.34), radius: 14, y: 10)
-                            .accessibilityHidden(true)   // 品牌图标装饰，下方有「Orange Cloud」文字
+                            .accessibilityHidden(true)   // 品牌图标装饰，下方有「OneCFCloud」文字
 
-                        Text("Orange Cloud")
+                        Text("OneCFCloud")
                             .font(.system(.largeTitle, weight: .bold))   // 语义字号，随动态字体缩放
                             .foregroundStyle(.primary)
 
@@ -101,9 +101,9 @@ struct LoginView: View {
                         HStack(spacing: 6) {
                             Text("版本 \(appVersion)")
                             Text("·")
-                            Link("隐私政策", destination: URL(string: "https://o-c.do/privacy")!)
+                            Text("改造自 Orange Cloud")
                             Text("·")
-                            Link("使用条款", destination: URL(string: "https://o-c.do/terms")!)
+                            Text("TestFlight 测试版")
                         }
                         .font(.caption2)
                         .foregroundStyle(.tertiary)
